@@ -1,0 +1,37 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp && gulp serve",
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/augustoar/site.git"
+  },
+  "author": "Augusto Ramos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/augustoar/site/issues"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.24.7",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^5.0.0"
+  },
+  "homepage": "https://github.com/augustoar/site#readme",
+  "resolutions": {
+    "graceful-fs": "^4.2.4"
+  }
+}
