@@ -1,0 +1,33 @@
+.home {
+  background-color: $cor-preta;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    color: $cor-preta;
+  }
+}
+
+.conteudo {
+  width: 450px;
+  text-align: center;
+  margin: 0 auto;
+
+  .texto {
+    display: inline-block;
+    background-color: white;
+    color: $cor-preta;
+    @include espacamento;
+    font-size: 1.5em;
+
+    @media #{$media-mobile} {
+      font-size: 1.2em;
+      @include espacamento;
+    }
+  }
+}

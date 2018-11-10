@@ -1,0 +1,9 @@
+$cor-preta: #000;
+$cor-cinza: #757575;
+
+$media-mobile: '(max-width: 767px)';
+
+@mixin espacamento {
+  padding: 1em;
+  margin: 1em;
+}
