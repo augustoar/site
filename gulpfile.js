@@ -6,6 +6,7 @@ const babel = require('gulp-babel')
 const imagemin = require('gulp-imagemin')
 const html = require('gulp-htmlmin')
 const rename = require('gulp-rename')
+const cachebust = require('gulp-cache-bust')
 const browserSync = require('browser-sync').create()
 
 gulp.task('default', [
@@ -33,6 +34,11 @@ gulp.task('min_html', () => {
         removeComments: true,
       })
     )
+    .pipe(
+      cachebust({
+        type: 'timestamp',
+      })
+    )
     .pipe(gulp.dest('./build/'))
 })
 
@@ -46,6 +52,11 @@ gulp.task('min_html_pages', () => {
       })
     )
     .pipe(rename('index.html'))
+    .pipe(
+      cachebust({
+        type: 'timestamp',
+      })
+    )
     .pipe(gulp.dest('./build/cv/'))
 })
 
